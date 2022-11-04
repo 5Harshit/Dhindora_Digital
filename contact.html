@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="icon.jpg"  rel="icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>contact</title>
+    <style type="text/css" media="all">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'popping', Sans-Serif;
+    }
+    .container{
+      width: 100%;
+      height: 200vh;
+      background: #6958D8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    form{
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 2vw 4vw;
+      margin-top: -200px;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    form h3{
+      color: #555;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    form input, textarea{
+      border: 0;
+      margin: 10px 0;
+      padding: 20px;
+      outline: none;
+      background: #f5f5f5;
+      font-size: 16px;
+      
+    }
+    form button{
+      padding: 15px;
+      background: #ff5361;
+      color: white;
+      font-size: 18px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      width: 150px;
+      margin: 20px auto 0;
+      border-radius: 30px;
+    }
+    h1{
+      font-size: 50px;
+      padding-top: 50px;
+      color: white;
+      
+    }
+    </style>
+  </head>
+  <body style="background: #6958D8; text-align:center">
+    <h1>Dhindora Digital</h1>
+    <center><hr style="width:70%; color:white"/></center>
+    <div class="container">
+      
+      <form action="https://formspree.io/f/xzbwkkbo" method="POST" />
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" name="name" required />
+        <input type="email" id="email" placeholder="Email id" name="email" />
+        <input type="text" id="number" placeholder="Phone number" name="number" required />
+        <textarea id="message" rows="4" name="Message" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
