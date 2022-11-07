@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link href="icon.jpg"  rel="icon">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +36,7 @@
         margin-right: 50px;
         list-style:none;
         font-size: 15px;
-      
+      transition: all .5s;
       
       }
       a{
@@ -47,7 +48,7 @@
         color: white;
         opacity: 1;
         border-bottom: 2px solid white;
-        
+        transform: scale(1.1);  
       }
       a:hover{
         color: white;
@@ -60,7 +61,7 @@
       height: 200vh;
       background: #6958D8;
       display: flex;
-      margin-top:100px;
+      margin-top: 100px;
       align-items: center;
       justify-content: center;
     }
@@ -106,18 +107,69 @@
       color: white;
       
     }
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
     </style>
   </head>
   <body style="background: #6958D8; text-align:center">
     <nav>
-      <ul>
+      <ul data-aos="fade-down">
         <a href="index.html"><li>Home</li></a>
         <a href="about.html"><li>About</li></a>
         <a href="#"><li>Pricing</li></a>
         <a href="contact.html"><li>Contact</li></a>
       </ul>
     </nav>
-    <h1>Dhindora Digital</h1>
+    <BR>
+    <div class="waviy">
+   <span style="--i:1">D</span>
+   <span style="--i:2">H</span>
+   <span style="--i:3">I</span>
+   <span style="--i:4">N</span>
+   <span style="--i:5">D</span>
+   <span style="--i:6">O</span>
+   <span style="--i:7">R</span>
+   <span style="--i:8">A</span>
+   <BR>
+   <span style="--i:9">D</span>
+   <span style="--i:11">I</span>
+   <span style="--i:12">G</span>
+   <span style="--i:13">I</span>
+   <span style="--i:14">T</span>
+   <span style="--i:15">A</span>
+   <span style="--i:16">L</span>
+
+  </div>
+
     <center><hr style="width:70%; color:white"/></center>
     <div class="container">
       
@@ -136,6 +188,15 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 900
+        });
+    </script>
+    
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
