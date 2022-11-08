@@ -9,12 +9,18 @@
     <link href="h1.css" rel="stylesheet">
     <script src="h1.js"></script>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Dhindora Digital</title>
     <style type="text/css" media="all">
       *{
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
+        
+      }
+      body{
+        background: #6958D8;
+        align-content: center;
       }
       nav{
         width: 100%;
@@ -120,48 +126,98 @@
         border: none;
         transform: none;
       }
-      #th{
-        float: left;
-        background: white;
-        height: 15%;
-        line-height: 33px;
-        width: 40%;
-        margin-top: 50px;
-        margin-left: 50px;
-        border-radius: 10px;
-      }
-      
-      #w{
-        float: left;
-        margin-left: 50px;
+<!-- footer -->
+
+      footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: auto;
+        padding-top: 40px;
         
-        min-height: 350px;
-        width: 300px;
-        line-height: 100px;
+        color: #fff;  
       }
-      #row{
-        width: 100%;
-        min-height: 70px;
-        padding-top: 50px;
-        background: #6958D8;
+      .footer-content{
+        
+        align-items: center;
+        justify-content: center: 
+        flex-direction: column;
         text-align: center;
-      }
-      .iimg{
         
-        
-        height: 5%;
-        width: 5%;
-        margin: 0%  10%; 
-        margin-top: 5px;
-        transition: all .5s;
       }
-      #row a {
-       
+      .footer-content h3{
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 3rem;
+      }
+      .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: white;
+      }
+      .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+      }
+      .socials li{
+        margin: 0 10px;
         border: none;
       }
-    .iimg:hover{
-      transform: scale(1.2);
-    }
+      .socials a{
+        text-decoration: none;
+        color: white;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .socials a i{
+        font-size: 1.1rem;
+        width: 20px;
+        transition: color .4s ease;
+      }
+      .socials a:hover i{
+        color: aqua;
+        
+      }
+      .footer-bottom{
+        background: #000;
+        width: 100vw;
+        padding: 10px;
+        padding-bottom: 60px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .footer-bottom p{
+        float: left;
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+      }
+      .footer-bottom p a{
+        color: ##44bae8;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      .footer-bottom span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+      }
+      @media (max-width:500px){
+        .footer ul{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      }
     </style>
   </head>
   <body>
@@ -208,6 +264,7 @@
         person at the right time,<br/>
         at the right place!</i></span>
         </center>
+        </div>
         <br>
         <br>
         <center><img src="DHINDORA DIGITAL (1)_page-0010.jpg" type="image/jpg"/></center>
@@ -216,51 +273,32 @@
             
             <iframe data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.387755896057!2d83.06179091484961!3d24.679193884139693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398ef9c416e7b415%3A0xc73f405a511373db!2sHotel%20Surya%20International!5e0!3m2!1sen!2sin!4v1667397577029!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          </div>
           
-          <div id="row">
-  
-            
-              <a  href="#"><img data-aos="fade-right" class="iimg" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"/></a>
-            
-        
-              <a  href="https://www.instagram.com/_.__meliodas__._/"><img data-aos="fade-up" class="iimg" src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" /></a>
-  
-  
-              <a href="#"><img data-aos="fade-left" class="iimg" src="https://cdn-icons-png.flaticon.com/512/145/145812.png" /></a>
-  
-      
-          </div>
-        <div style="width:100%;min-height:400px; background:#6958D8;">
-        <div style="float:left; min-height:200px;width:50%; ">
           
+          <footer>
+            <div class="footer-content">
+                
+                <h3>DHINDORA digital</h3><br>
+                <p>Thank you! ...with Dhindora Digital<b> Write a successful story. </b><br/>
+                <b>ADDRESS</b><br/>122,VYKENT BHAVAN, MANDI MOHAL,ROBERTSGANJ,UTTAR PRADESH,INDIA<br/>
+                <b>TELEPHONE</b><br>9219035096<br><br>
+                <b>CONTACT US</b><br>9219035096<br><br>
+                </p><br>
+                
+              <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              
+              <div class="footer-bottom">
+                <p>copyright &copy;2022 <a href="#">Dhindora Digital</a></p>
+              </div>
+            </div>
+          </footer>
         
-        <div id="th">
-          <p style="font-size:250%;color: #6958D8;font-weight:200;"><i>Thank you!</i></p>
-        </div><br>
-        <div id="w">
-        <p style="font-size:120%;font-weight:400;">...with Dhindora Digital</p>
-        <div style="color:white;line-height:40px;margin-top:-80px; font-weight:bold; font-size:250%">
-        Write<br/>
-        a successful<br/> 
-        story.<br/>
-        </div>
-        </div>
-        </div>
-        <div  style="float:left; min-height:200px;width:50%;background: #6958D8; padding-right:5%; padding-top:10%; text-align:right; color:white; font-size:130%">
-          <b style="font-weight:1000">ADDRESS</b><br/>
-          122,VYKENT BHAVAN,MANDI<br>MOHAL,ROBERTSGANJ,<BR>UTTER PRADESH,INDIA
-          <br>
-          <b style="font-weight:1000">TELEPHONE</b><br/>
-          9219035095
-          <br><br>
-          <b style="font-weight:1000">CONTACT US</b><br/>
-          9219035096
-          
-        </div>
-        
-      </div>
-    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
